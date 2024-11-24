@@ -1,0 +1,15 @@
+/* - Mobile: 375px */
+/* - Desktop: 1440px */
+
+/* Start Global Variables */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+/* End Global Variables */
+
+html {
+    font-size: 16px;
+}
