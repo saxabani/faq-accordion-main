@@ -1,15 +1,64 @@
 /* - Mobile: 375px */
 /* - Desktop: 1440px */
 
-/* Start Global Variables */
+/* Start Variables */
 :root {
     --White: hsl(0, 0%, 100%);
     --Light-pink: hsl(275, 100%, 97%);
     --Grayish-purple: hsl(292, 16%, 49%);
     --Dark-purple: hsl(292, 42%, 14%);
 }
-/* End Global Variables */
+/* End Variables */
 
+/* Start Global Rules */
 html {
     font-size: 16px;
 }
+
+body {
+    font-family: "work Sans", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-pink);
+}
+.hide {
+    display: none;
+}
+/* End Global Rules */
+
+/* Start main */
+main {
+    width: 500px;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 10px;
+}
+main header {
+    display: flex;
+}
+main header img {
+    padding-right: 10px;
+}
+main .container .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container .question h2 {
+    font-size: 15px;
+    font-weight: 600;
+}
+main .container .question h2:hover {
+    color: #AD28EB;
+    cursor: pointer;
+}
+main .container .question .image img:hover {
+    cursor: pointer;
+}
+main .container .text {
+    color: var(--Grayish-purple);
+}
+/* End main */
