@@ -1,28 +1,36 @@
-/* - Mobile: 375px */
-/* - Desktop: 1440px */
-
 /* Start Variables */
 :root {
     --White: hsl(0, 0%, 100%);
     --Light-pink: hsl(275, 100%, 97%);
     --Grayish-purple: hsl(292, 16%, 49%);
     --Dark-purple: hsl(292, 42%, 14%);
+    --purple: #AD28EB;
 }
 /* End Variables */
 
 /* Start Global Rules */
+* {
+    font-family: "work Sans", sans-serif;
+}
 html {
     font-size: 16px;
 }
 
 body {
-    font-family: "work Sans", sans-serif;
     min-height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--Light-pink);
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+}
+@media(max-width: 375px) {
+    body {
+        background-image: url(../assets/images/background-pattern-mobile.svg);
+        padding: 15px;
+    }
 }
 .hide {
     display: none;
@@ -42,6 +50,22 @@ main header {
 main header img {
     padding-right: 10px;
 }
+main .container button{
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    text-align: left;
+    padding-block: 10px;
+}
+main .container button:not(:last-of-type) {
+    border-bottom: 1px solid var(--Light-pink);
+}
+main .container button:focus-visible {
+    outline: none;
+}
+main .container button:focus-visible .question h2 {
+    color: var(--purple);
+}
 main .container .question {
     display: flex;
     justify-content: space-between;
@@ -50,9 +74,15 @@ main .container .question {
 main .container .question h2 {
     font-size: 15px;
     font-weight: 600;
+    line-height: 1.4;
+}
+@media (max-width: 375px) {
+    main .container .question h2 {
+        width: 230px;
+    }
 }
 main .container .question h2:hover {
-    color: #AD28EB;
+    color: var(--purple);
     cursor: pointer;
 }
 main .container .question .image img:hover {
@@ -60,5 +90,9 @@ main .container .question .image img:hover {
 }
 main .container .text {
     color: var(--Grayish-purple);
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 /* End main */
