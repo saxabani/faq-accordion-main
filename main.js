@@ -8,7 +8,7 @@ function hiding(num) {
     minus[num].classList.toggle("hide");
     text[num].classList.toggle("hide");
 }
-
+// This loop without event delegation
 for (let i = 0; i < plus.length; i++) {
     plus[i].addEventListener("click", () => {hiding(i)});
 
@@ -20,3 +20,24 @@ for (let i = 0; i < plus.length; i++) {
         }
     })
 }
+
+// This loop with event delegation
+
+// for (let i = 0; i < plus.length; i++) {
+//     document.body.addEventListener("click", (e) => {
+//         if(e.target === plus[i]) {
+//             hiding(i);
+//         }    
+//     });
+//     document.body.addEventListener("click", (e) => {
+//         if(e.target === minus[i]) {
+//             hiding(i);
+//         }    
+//     });
+//     document.body.addEventListener("keydown", (e) => {
+//         if(e.key === "Enter" && e.target === buttons[i]) {
+//             hiding(i);
+//         }
+//     })
+// }
+
