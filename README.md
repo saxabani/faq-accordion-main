@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor solution link](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz/hub)
+- Solution URL: [frontendmentor solution link](https://www.frontendmentor.io/solutions/faq-html-css-and-vanilla-js-1YLYaimywu)
 - Live Site URL: [Live link](https://saxabani.github.io/faq-accordion-main/)
 
 
