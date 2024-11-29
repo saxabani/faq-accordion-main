@@ -25,8 +25,8 @@ function hiding(val) {
 document.body.addEventListener("click", (e) => {
     const trg = e.target
     if(trg.classList.contains("plus") || trg.classList.contains("minus")) {
-        ( trg.parentNode.nextElementSibling|| trg.parentNode.previousElementSibling).classList.toggle("hide")
         trg.classList.toggle("hide");
+        (trg.nextElementSibling|| trg.previousElementSibling).classList.toggle("hide")
         trg.parentNode.parentNode.nextElementSibling.classList.toggle("hide")
     }      
 });
